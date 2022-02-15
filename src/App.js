@@ -1,29 +1,19 @@
-import Header from './components/header';
-import Container
- from './components/container';
- import SideBar from './components/sidebar';
- import Footer  from './components/footer';
+import React from 'react';
+import { Layout } from 'antd';
+import Sidebar from './SideBar';
+import Content from './Content';
+
+
 
 function App() {
-  return (
-    <div style={{display:"flex", flex:1,  flexDirection:"column",background:"green",height:"100vh"}}>
-        <Header/>
-        <div style={{display:'flex',flex:8,background:'black'}}>
-          <SideBar>
-            <h1>SideBar</h1>
-          </SideBar>
-       <Container>
-         <h1>Container</h1>
-       </Container>
+    return ( 
+  <Layout>
+  <Sidebar/>
+  <Content/>  
+</Layout>
 
-      
+    );
 
-        </div>
-        <Footer>
-         <h1>Footer</h1>
-       </Footer>
-    </div>
-  );
 }
 
 export default App;

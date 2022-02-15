@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+
 import App from './App';
-import './App.css';
-import 'antd/dist/antd.less';
+
+import 'antd/dist/antd.min.css';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
