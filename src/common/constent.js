@@ -1,5 +1,11 @@
 const sidebarlist = [
   {
+    titile: "React",
+  },
+  {
+    titile: "Hooks",
+  },
+  {
     titile: "React Fragment",
   },
   {

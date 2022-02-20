@@ -3,7 +3,6 @@ import { Layout } from "antd";
 import Sidebar from "./SideBar";
 import Content from "./Content";
 import { sidebarlist } from "./common/constent";
-
 class App extends Component {
   constructor(props) {
     super(props);

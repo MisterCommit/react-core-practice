@@ -5,11 +5,11 @@ class parentcomponent extends Component {
   render() {
     return (
       <div>
-        <h1 style={{ color: "#0a7b" }}>
+        <h1>
           Fragment is a way return group of element with createing extra node in
           dom
         </h1>
-        <h3 style={{ color: "#0a7b" }}>
+        <h3>
           Blow is table Tag which have Row child. Row child return more then one
           row with any div. you can inspect element to verify it.
         </h3>
