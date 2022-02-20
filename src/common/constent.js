@@ -15,6 +15,9 @@ const sidebarlist = [
   {
     titile: "Portal",
   },
+  {
+    titile: "Porfiler",
+  },
 ];
 
 export { sidebarlist };

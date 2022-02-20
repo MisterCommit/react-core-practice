@@ -5,6 +5,7 @@ import FragmentCompontnt from "./component/fragment/ParentComponent";
 import ReactExplain from "./component/react/ReactExplain";
 import ReactHooks from "./component/hooks/ReactHooks";
 import Portal from "./component/portal/Portal";
+import Profiler from "./component/Profiler/Profiler";
 
 class Content extends Component {
   renderChild = () => {
@@ -19,6 +20,8 @@ class Content extends Component {
       return <PureComponent />;
     } else if (this.props.selected === "Portal") {
       return <Portal />;
+    } else if (this.props.selected === "Porfiler") {
+      return <Profiler />;
     }
   };
 
