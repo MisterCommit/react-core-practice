@@ -9,7 +9,7 @@ function App() {
     return ( 
   <Layout>
   <Sidebar/>
-  <Content/>  
+  <Content/>   
 </Layout>
 
     );
