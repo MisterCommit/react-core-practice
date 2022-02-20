@@ -5,11 +5,15 @@ const sidebarlist = [
   {
     titile: "Hooks",
   },
+
   {
-    titile: "React Fragment",
+    titile: "Fragment",
   },
   {
     titile: "Pure Component",
+  },
+  {
+    titile: "Portal",
   },
 ];
 

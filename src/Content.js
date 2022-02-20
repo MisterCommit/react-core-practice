@@ -4,6 +4,7 @@ import PureComponent from "./component/purecomponents/ParentComponent";
 import FragmentCompontnt from "./component/fragment/ParentComponent";
 import ReactExplain from "./component/react/ReactExplain";
 import ReactHooks from "./component/hooks/ReactHooks";
+import Portal from "./component/portal/Portal";
 
 class Content extends Component {
   renderChild = () => {
@@ -12,10 +13,12 @@ class Content extends Component {
       return <ReactExplain />;
     } else if (this.props.selected === "Hooks") {
       return <ReactHooks />;
-    } else if (this.props.selected === "React Fragment") {
+    } else if (this.props.selected === "Fragment") {
       return <FragmentCompontnt />;
     } else if (this.props.selected === "Pure Component") {
       return <PureComponent />;
+    } else if (this.props.selected === "Portal") {
+      return <Portal />;
     }
   };
 
