@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Layout, Menu } from "antd";
+import { sidebarlist } from "./common/constent";
 const { Sider } = Layout;
 
 class Sidebar extends Component {
@@ -17,10 +18,15 @@ class Sidebar extends Component {
     return (
       <Sider trigger={null} collapsible collapsed={this.state.collapsed}>
         <div className="logo" />
-        <Menu theme="dark" mode="inline" defaultSelectedKeys={["1"]}>
-          <Menu.Item key="1">nav 1</Menu.Item>
-          <Menu.Item key="2">nav 2</Menu.Item>
-          <Menu.Item key="3">nav 3</Menu.Item>
+        <Menu
+          theme="dark"
+          mode="inline"
+          defaultSelectedKeys={[sidebarlist[0].titile]}
+          onClick={this.props.handleClick}
+        >
+          {sidebarlist.map((item) => {
+            return <Menu.Item key={item.titile}>{item.titile}</Menu.Item>;
+          })}
         </Menu>
       </Sider>
     );
