@@ -1,22 +1,25 @@
 const sidebarlist = [
   {
-    titile: "React",
+    title: "React",
   },
   {
-    titile: "Hooks",
+    title: "Hooks",
   },
 
   {
-    titile: "Fragment",
+    title: "Fragment",
   },
   {
-    titile: "Pure Component",
+    title: "Pure Component",
   },
   {
-    titile: "Portal",
+    title: "Portal",
   },
   {
-    titile: "Porfiler",
+    title: "Porfiler",
+  },
+  {
+    title: "Error Boundary",
   },
 ];
 

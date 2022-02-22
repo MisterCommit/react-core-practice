@@ -6,6 +6,7 @@ import ReactExplain from "./component/react/ReactExplain";
 import ReactHooks from "./component/hooks/ReactHooks";
 import Portal from "./component/portal/Portal";
 import Profiler from "./component/Profiler/Profiler";
+import ErrorBoundary from "./component/ErrorBoundary/ErrorBoundary";
 
 class Content extends Component {
   renderChild = () => {
@@ -22,6 +23,8 @@ class Content extends Component {
       return <Portal />;
     } else if (this.props.selected === "Porfiler") {
       return <Profiler />;
+    } else if (this.props.selected === "Error Boundary") {
+      return <ErrorBoundary />;
     }
   };
 

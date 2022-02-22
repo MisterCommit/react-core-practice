@@ -8,7 +8,7 @@ class App extends Component {
     super(props);
 
     this.state = {
-      selected: sidebarlist[0].titile,
+      selected: sidebarlist[0].title,
     };
   }
 

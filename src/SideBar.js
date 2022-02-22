@@ -21,11 +21,11 @@ class Sidebar extends Component {
         <Menu
           theme="dark"
           mode="inline"
-          defaultSelectedKeys={[sidebarlist[0].titile]}
+          defaultSelectedKeys={[sidebarlist[0].title]}
           onClick={this.props.handleClick}
         >
           {sidebarlist.map((item) => {
-            return <Menu.Item key={item.titile}>{item.titile}</Menu.Item>;
+            return <Menu.Item key={item.title}>{item.title}</Menu.Item>;
           })}
         </Menu>
       </Sider>
