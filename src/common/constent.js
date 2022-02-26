@@ -24,6 +24,9 @@ const sidebarlist = [
   {
     title: "Simple Ref",
   },
+  {
+    title: "Custom Component Ref",
+  },
 ];
 
 export { sidebarlist };
