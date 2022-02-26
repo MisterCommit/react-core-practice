@@ -21,6 +21,9 @@ const sidebarlist = [
   {
     title: "Error Boundary",
   },
+  {
+    title: "Simple Ref",
+  },
 ];
 
 export { sidebarlist };

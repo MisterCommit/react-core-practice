@@ -7,6 +7,7 @@ import ReactHooks from "./component/hooks/ReactHooks";
 import Portal from "./component/portal/Portal";
 import Profiler from "./component/Profiler/Profiler";
 import ErrorBoundary from "./component/ErrorBoundary/ErrorBoundary";
+import SimpleRef from "./component/Refs/SimpleRef";
 
 class Content extends Component {
   renderChild = () => {
@@ -25,6 +26,8 @@ class Content extends Component {
       return <Profiler />;
     } else if (this.props.selected === "Error Boundary") {
       return <ErrorBoundary />;
+    } else if (this.props.selected === "Simple Ref") {
+      return <SimpleRef />;
     }
   };
 
