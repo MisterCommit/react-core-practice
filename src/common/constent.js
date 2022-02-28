@@ -27,6 +27,9 @@ const sidebarlist = [
   {
     title: "Custom Component Ref",
   },
+  {
+    title: "HOC",
+  },
 ];
 
 export { sidebarlist };

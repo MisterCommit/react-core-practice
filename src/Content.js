@@ -9,6 +9,7 @@ import Profiler from "./component/Profiler/Profiler";
 import ErrorBoundary from "./component/ErrorBoundary/ErrorBoundary";
 import SimpleRef from "./component/Refs/SimpleRef";
 import ParentCompForRef from "./component/Refs/ParentCompForRef";
+import SimpleHOC from "./component/simpleHOC/SimpleHOC";
 
 class Content extends Component {
   renderChild = () => {
@@ -31,6 +32,8 @@ class Content extends Component {
       return <SimpleRef />;
     } else if (this.props.selected === "Custom Component Ref") {
       return <ParentCompForRef />;
+    } else if (this.props.selected === "HOC") {
+      return <SimpleHOC />;
     }
   };
 
