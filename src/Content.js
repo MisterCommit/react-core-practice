@@ -10,6 +10,7 @@ import ErrorBoundary from "./component/ErrorBoundary/ErrorBoundary";
 import SimpleRef from "./component/Refs/SimpleRef";
 import ParentCompForRef from "./component/Refs/ParentCompForRef";
 import SimpleHOC from "./component/simpleHOC/SimpleHOC";
+import RenderProps from "./component/RenderProps/RenderProps";
 
 class Content extends Component {
   renderChild = () => {
@@ -34,6 +35,8 @@ class Content extends Component {
       return <ParentCompForRef />;
     } else if (this.props.selected === "HOC") {
       return <SimpleHOC />;
+    } else if (this.props.selected === "Render Props") {
+      return <RenderProps />;
     }
   };
 

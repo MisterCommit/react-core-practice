@@ -30,6 +30,9 @@ const sidebarlist = [
   {
     title: "HOC",
   },
+  {
+    title: "Render Props",
+  },
 ];
 
 export { sidebarlist };
