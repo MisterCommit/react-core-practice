@@ -33,6 +33,9 @@ const sidebarlist = [
   {
     title: "Render Props",
   },
+  {
+    title: "Shabeer",
+  },
 ];
 
 export { sidebarlist };

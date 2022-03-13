@@ -11,6 +11,7 @@ import SimpleRef from "./component/Refs/SimpleRef";
 import ParentCompForRef from "./component/Refs/ParentCompForRef";
 import SimpleHOC from "./component/simpleHOC/SimpleHOC";
 import RenderProps from "./component/RenderProps/RenderProps";
+import Shabeer from "./component/Shabeer/Shabeer";
 
 class Content extends Component {
   renderChild = () => {
@@ -37,6 +38,8 @@ class Content extends Component {
       return <SimpleHOC />;
     } else if (this.props.selected === "Render Props") {
       return <RenderProps />;
+    } else if (this.props.selected === "Shabeer") {
+      return <Shabeer />;
     }
   };
 
