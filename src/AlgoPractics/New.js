@@ -14,19 +14,12 @@ const _equ = (array, left, right) => {
   console.log("===>>>", backArrayOfelements, array[left], nextArrayOfelements);
   //   console.log(array, left, right);
 
-  const leftEquations = _equ(array, 0, left - 1);
-  const rightEquations = _equ(array, left + 1, right);
-  const reults = [];
-  for (let i = 0; i < rightEquations.length; i++) {
-    reults.push(`${backArrayOfelements} ${array[left]} ${rightEquations[i]}`);
-  }
-
-  console.log("leftEquations", leftEquations, rightEquations);
-  return reults;
+  _equ(array, 0, left - 1);
+  _equ(array, left + 1, right);
 };
 
 // equ(["a", "b"]);
-// equ(["a", "b", "c"]);
-equ([2, 4, 5]);
+equ(["a", "b", "c"]);
+// equ([4, 5]);
 // equ(["a", "b", "c", "d"]);
 // console.log(equ(["a", "b"]));

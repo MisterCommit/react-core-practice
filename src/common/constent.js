@@ -36,6 +36,9 @@ const sidebarlist = [
   {
     title: "Shabeer",
   },
+  {
+    title: "QRcode",
+  },
 ];
 
 export { sidebarlist };

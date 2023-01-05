@@ -12,6 +12,7 @@ import ParentCompForRef from "./component/Refs/ParentCompForRef";
 import SimpleHOC from "./component/simpleHOC/SimpleHOC";
 import RenderProps from "./component/RenderProps/RenderProps";
 import Shabeer from "./component/Shabeer/Shabeer";
+import QRCOde from "./component/QRCOde/QRCode";
 
 class Content extends Component {
   renderChild = () => {
@@ -40,6 +41,8 @@ class Content extends Component {
       return <RenderProps />;
     } else if (this.props.selected === "Shabeer") {
       return <Shabeer />;
+    } else if (this.props.selected === "QRcode") {
+      return <QRCOde />;
     }
   };
 
